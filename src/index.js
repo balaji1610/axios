@@ -1,4 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
-ReactDOM.render(<h1>Hello world!</h1>, document.getElementById("root"));
+import Axios from "./services/Axios";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(<Axios />);
